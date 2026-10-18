@@ -1,3 +1,16 @@
+import { HugeiconsIcon } from "@hugeicons/react";
+import {
+  GithubIcon,
+  Linkedin01Icon,
+  Mail01Icon,
+} from "@hugeicons/core-free-icons";
+
+const socials = [
+  { label: "GitHub", href: "https://github.com/Chukwuemekaeze", icon: GithubIcon },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/chukwuemekaaeze/", icon: Linkedin01Icon },
+  { label: "Email", href: "mailto:chukwuemekaaeze@gmail.com", icon: Mail01Icon },
+];
+
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 w-full font-sans">
@@ -31,6 +44,22 @@ export default function Home() {
               <br />
               Engineer
             </h1>
+            <div className="mt-12 flex gap-4">
+              {socials.map(({ label, href, icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  {...(href.startsWith("http") && {
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                  })}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-zinc-300 transition-colors hover:border-[#dab134] hover:text-[#dab134]"
+                >
+                  <HugeiconsIcon icon={icon} size={20} />
+                </a>
+              ))}
+            </div>
           </div>
         </section>
         <aside className="w-full md:w-[35%] p-8 border-t border-white/10 md:border-t-0 md:border-l">
