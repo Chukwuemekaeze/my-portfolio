@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   experimental: {
     agentFeedback: true,
   },
+  images: {
+    // Spotify album covers
+    remotePatterns: [new URL("https://i.scdn.co/image/**")],
+  },
   cacheComponents: true,
   partialPrefetching: true,
   turbopack: {

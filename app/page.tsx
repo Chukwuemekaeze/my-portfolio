@@ -4,6 +4,7 @@ import {
   Linkedin01Icon,
   Mail01Icon,
 } from "@hugeicons/core-free-icons";
+import NowPlaying from "@/components/now-playing";
 
 const socials = [
   { label: "GitHub", href: "https://github.com/Chukwuemekaeze", icon: GithubIcon },
@@ -63,7 +64,7 @@ export default function Home() {
           </div>
         </section>
         <aside className="w-full md:w-[35%] p-8 border-t border-white/10 md:border-t-0 md:border-l">
-          Sidebar
+          <NowPlaying />
         </aside>
       </div>
     </div>
