@@ -4,7 +4,7 @@ import {
   Linkedin01Icon,
   Mail01Icon,
 } from "@hugeicons/core-free-icons";
-import NowPlaying from "@/components/now-playing";
+import NowPlaying from "./now-playing";
 
 const socials = [
   { label: "GitHub", href: "https://github.com/Chukwuemekaeze", icon: GithubIcon },
