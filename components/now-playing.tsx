@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import type { NowPlaying as NowPlayingData } from "@/lib/spotify";
+import type { NowPlaying as NowPlayingData } from "@/app/api/lib/spotify";
 
 const REFRESH_MS = 15_000;
 

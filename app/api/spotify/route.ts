@@ -1,5 +1,5 @@
 import { connection } from "next/server";
-import { getNowPlaying } from "@/lib/spotify";
+import { getNowPlaying } from "@/app/api/lib/spotify";
 
 export async function GET() {
   // Always run at request time so the song is never stale.
